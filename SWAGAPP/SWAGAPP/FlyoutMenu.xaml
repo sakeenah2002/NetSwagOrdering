@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:SWAGAPP"
+             Title="FlyoutMenu"
+             x:Class="SWAGAPP.FlyoutMenu" BackgroundColor="PapayaWhip">
+
+    <StackLayout>
+        <ListView x:Name="view" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:FlyoutNav}">
+                    <local:FlyoutNav Pages="Home" Navpages="{x:Type local:Home}"/>
+                    <local:FlyoutNav Pages="Unisex" Navpages="{x:Type local:Unisex}"/>
+                    <local:FlyoutNav Pages="Children" Navpages="{x:Type local:Children}"/>
+                    <local:FlyoutNav Pages="Men" Navpages="{x:Type local:Men}"/>
+                    <local:FlyoutNav Pages="Women" Navpages="{x:Type local:Women}"/>
+                    <local:FlyoutNav Pages="Settings" Navpages="{x:Type local:Home}"/>
+                    <local:FlyoutNav Pages="Help" Navpages="{x:Type local:Home}"/>
+                    <local:FlyoutNav Pages="Account" Navpages="{x:Type local:Home}"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Pages}"  
+                               FontSize="Large" 
+                               FontAttributes="Bold" 
+                               TextColor="Black"
+                               Font ="{Binding font}"/>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

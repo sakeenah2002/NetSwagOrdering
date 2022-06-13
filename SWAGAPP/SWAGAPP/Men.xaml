@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWAGAPP.Men" BackgroundColor="PapayaWhip">
+    <StackLayout>
+        <Grid Margin="10">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--Row0-->
+            <ImageButton Source="jeans11" Grid.Column="0" Grid.Row="0"  
+                         Aspect="AspectFill" BackgroundColor="Transparent"
+                         HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"
+                        BindingContext="Price"
+                 Clicked="Price_Clicked"/>
+
+            <ImageButton Source="jeans22" Grid.Column="1" Grid.Row="0"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+            <!--Row1-->
+            <ImageButton Source="jacket11" Grid.Column="0" Grid.Row="1"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+
+            <ImageButton Source="jacket22" Grid.Column="1" Grid.Row="1"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+            <!--Row 2-->
+            <ImageButton Source="shirt11" Grid.Column="0" Grid.Row="2"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+
+            <ImageButton Source="shirt22" Grid.Column="1" Grid.Row="2"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"                         
+                         BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>

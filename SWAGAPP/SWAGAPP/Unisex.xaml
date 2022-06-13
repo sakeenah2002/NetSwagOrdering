@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SWAGAPP"
+             Title="Unisex"
+             x:Class="SWAGAPP.Unisex" BackgroundColor="PapayaWhip">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="10">
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--Row0-->
+            <ImageButton Source="tshirt1" Grid.Column="0" Grid.Row="0"  
+                         Aspect="AspectFill" BackgroundColor="Transparent"
+                         HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand"
+                        BindingContext="Price"
+                 Clicked="Price_Clicked"/>
+
+            <ImageButton Source="tshirt2" Grid.Column="1" Grid.Row="0"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+            <!--Row1-->
+            <ImageButton Source="tshirt3" Grid.Column="0" Grid.Row="1"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+
+            <ImageButton Source="hoodie1" Grid.Column="1" Grid.Row="1"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+            <!--Row 2-->
+            <ImageButton Source="hoodie2" Grid.Column="0" Grid.Row="2"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                          BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+
+            <ImageButton Source="hoodie3" Grid.Column="1" Grid.Row="2"  
+                         Aspect="AspectFill" 
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"                         
+                         BackgroundColor="Transparent"
+                 Clicked="Price_Clicked"/>
+
+        </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

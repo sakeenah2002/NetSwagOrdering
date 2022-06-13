@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SWAGAPP.Cart1" BackgroundColor="PapayaWhip">
+
+    <StackLayout>
+
+        <Label Text="Price: R150" FontAttributes="Bold" FontSize="Medium"  BindingContext="R150"/>
+
+        <Label Text="Name" FontAttributes="Bold" />
+        <Entry Text="{Binding Name}"/>
+
+        <Label Text="Surname" FontAttributes="Bold" />
+        <Entry Text="{Binding Surname}"/>
+
+        <Label Text="Colour (Black, Blue, White, Red" FontAttributes="Bold" />
+        <Entry Text="{Binding Color}"/>
+        
+        <Label Text="Gender" FontAttributes="Bold" />
+        <Entry Text="{Binding Gender}"/>
+
+        <Label Text="Date" FontAttributes="Bold" />
+        <DatePicker  FontSize="Subtitle" Margin="0,3,0,-2"></DatePicker >
+
+        <Label Text="Size (From 2XS - 3XL" FontAttributes="Bold" />
+        <Entry Text="{Binding size}"/>
+ 
+        <Label Text="Shipping Address" FontAttributes="Bold" />
+        <Entry Text="{Binding DeliveryAddress}"/>
+
+
+        <Button x:Name="Savebutton" Text="Save Order" Clicked="Saved"/>
+
+    </StackLayout>
+</ContentPage>
